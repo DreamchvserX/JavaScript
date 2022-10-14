@@ -1,0 +1,5 @@
+function convertToInteger(string) {
+return parseInt(string, 2)
+}
+
+convertToInteger("10011");

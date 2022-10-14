@@ -1,0 +1,6 @@
+function functionWithArgs(int1, int2){
+  console.log(int1 + int2);
+};
+
+functionWithArgs(1,2);
+functionWithArgs(7,9);

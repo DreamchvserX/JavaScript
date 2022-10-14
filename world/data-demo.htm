@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>World AJAX Projekt: Beispiel Parameter für verschiedene Suchen</title>
+	<style>
+		body { font-family: Calibri, sans-serif; margin: 3em;}
+		h1 { font-size: 1.5em;}
+		h2 { font-size: 1.3em;}
+		a { text-decoration: none !important; font-weight: bold;}
+		a[href^=data]::after {
+				content: " (" attr(href) ")";
+				text-decoration: none !important;
+				color: #666;
+				font-weight: normal;
+			}	
+	</style>
+</head>
+<body>
+	<h1>World AJAX Projekt: Beispiel Parameter für verschiedene Suchen</h1>
+	<h2>Aufruf von data/liste-json.php</h2>
+	<ul>
+		<li><a href="data/liste-json.php?liste=regionen&suche=Europe">Regionen von Europa</a></li>
+		<li><a href="data/liste-json.php?liste=laender&suche=Eastern%20Europe">Länder von Ost-Europa</a></li>
+		<li><a href="data/liste-json.php?liste=staedte&suche=Poland">Städte von Polen</a></li>
+		<li><a href="data/liste-json.php?liste=landesinfo&suche=Poland">Landesinfo von Polen</a></li>
+		<li><a href="data/liste-json.php?liste=stadtinfo&suche=2939">Stadtinfo einer Stadt</a></li>
+	</ul>
+	<h2>Aufruf von data/liste-xml.php</h2>
+	<ul>
+		<li><a href="data/liste-xml.php?liste=regionen&suche=Europe">Regionen von Europa</a></li>
+		<li><a href="data/liste-xml.php?liste=laender&suche=Eastern%20Europe">Länder von Ost-Europa</a></li>
+		<li><a href="data/liste-xml.php?liste=staedte&suche=Poland">Städte von Polen</a></li>
+		<li><a href="data/liste-xml.php?liste=landesinfo&suche=Poland">Landesinfo von Polen</a></li>
+		<li><a href="data/liste-xml.php?liste=stadtinfo&suche=2939">Stadtinfo einer Stadt</a></li>
+	</ul>	
+</body>
+</html>

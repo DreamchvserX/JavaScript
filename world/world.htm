@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World AJAX Projekt</title>    
+    <link rel="stylesheet" href="css/world.css">
+</head>
+<body>
+    <article>
+        <h1>Die Welt</h1>
+        <div id="grid">
+
+            <div><label for="kontinent">Kontinente</label>
+                <select name="kontinent" id="kontinent">
+                    <option value=""> -- Wählen sie einen Kontinent --</option>
+                </select></div>
+
+            <div><label for="region">Regionen</label>
+                <select name="region" id="region">
+                    <option value=""> -- Wählen sie eine Region --</option>
+                </select></div>
+
+            <div><label for="land">Länder</label>
+                <select name="land" id="land">
+                    <option value=""> -- Wählen sie ein Land --</option>
+                </select></div>
+
+            <div><h2>Landesinfo</h2>
+                <div id="ausgabe"></div>
+            </div>
+
+            <div><label for="stadt">Städte</label>
+                <select name="stadt" id="stadt">
+                    <option value=""> -- Wählen sie eine Stadt --</option>
+                </select></div>
+
+            <div><h2>Stadtinfo</h2>
+                <div id="ausgabe2"></div>
+            </div>
+
+        </div>
+    </article>
+    <script src="js/world2.js"></script>
+</body>
+</html>

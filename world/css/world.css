@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+html { font-size: 110%; }
+
+body { font-family: Calibri, sans-serif; }
+
+h2 { font-size: 1.2rem; margin: 0; padding: 0; }
+
+label { display: block; font-weight: bold; font-size: 1.2rem;}
+
+select { width: 12rem;}
+
+div > div { border: none; }
+
+dt { font-weight: bold; }
+dd { margin:0 0 0.3rem 0;}
+
+div { 
+    border: 1px solid rgba(0,0,0,0.3); 
+    padding: 0.3rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 12rem 12rem minmax(12rem, auto);
+    grid-template-areas: 
+        "l1 m r1"
+        "l2 m r2"
+        "l3 m r2";
+}
+
+#grid>div:nth-of-type(1) {
+    grid-area: l1;
+}
+
+#grid>div:nth-of-type(2) {
+    grid-area: l2;
+}
+#grid>div:nth-of-type(3) {
+    grid-area: l3;
+}
+#grid>div:nth-of-type(4) {
+    grid-area: m;
+}
+#grid>div:nth-of-type(5) {
+    grid-area: r1;
+}
+#grid>div:nth-of-type(6) {
+    grid-area: r2;
+}
+
+.abgeblendet {
+    opacity: 0.1;
+}
+
+div, select {
+    transition: opacity 0.5s linear 0s;
+}
+
+.loading {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(../images/ui-anim_basic_16x16.gif);
+}
