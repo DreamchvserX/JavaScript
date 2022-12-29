@@ -1,0 +1,3 @@
+let hello = "   Hello, World!  ";
+let wsRegex = /(\s+)(\w+\S.\w+\S)(\s+)/igm; // Change this line
+let result = hello.replace(wsRegex, "$2"); // Change this line
